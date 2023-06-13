@@ -1,7 +1,6 @@
 import pyautogui as pg
-import time
-
-time.sleep(3)
+from time import sleep
+sleep()
 while True:
     pg.typewrite('I am a coder', interval=0.0)
     pg.keyDown('u')
