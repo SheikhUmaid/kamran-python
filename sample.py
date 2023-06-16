@@ -1,10 +1,6 @@
 import random
-
-
-
 level = 1
 score = 0
-
 def Level1(): 
     while 1:
         print(f"Level {level} \n Score {score}")
