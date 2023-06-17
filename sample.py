@@ -1,7 +1,9 @@
 import random
-level = 1
+level = 2
 score = 0
 def Level1(): 
+    global level
+    global score  
     while 1:
         print(f"Level {level} \n Score {score}")
         listt = ['-','+','*']
@@ -43,6 +45,9 @@ def Level1():
 
 
 def Level2(): 
+    
+    global level
+    global score
     while 1:
         print(f"Level {level} \n Score {score}")
         listt = ['-','+','*']
@@ -85,7 +90,7 @@ def Level2():
 
     
 
-# def main():
+# # def main():
 
 if level == 1:
     Level1()
