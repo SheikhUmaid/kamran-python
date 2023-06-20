@@ -15,7 +15,7 @@ def Level1():
         if random_operator[0] == '-':
             answer = ist - second
             print(f"{ist} {random_operator[0]} {second} = ?: \n")
-            user_answer = int(input("Enter answer"))
+            user_answer = int(input("Enter answer:"))
             if user_answer == answer:
                 print("you won!")
                 score += 1
