@@ -13,9 +13,10 @@ Label(win, text ="Enter yout name?").pack()
 input_box = Entry(win)
 input_box.pack()
 def add():
-    a.say(f"Hello {input_box.get()}")
-    # Label(win, text=f"{input_box.get()}").pack()
-    a.runAndWait()
+    a  =eval(f"{input_box.get()}")
+
+    Label(win, text=f"{a}").pack()
+    # a.runAndWait()
 
 Button(win, text="say", command=add).pack()
 

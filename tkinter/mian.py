@@ -1,4 +1,4 @@
-from tkinter import (Tk, Label, Button)
+from tkinter import (Tk, Label, Button, Entry)
 import pyttsx3 as tts
 
 engine = tts.init()
