@@ -1,6 +1,5 @@
 import socket
 import playsound
-
 print("creating server")
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
@@ -13,9 +12,9 @@ print(f"Server: {message}")
 
 while True:
 
-    a = input('you: ')
-    serversocket.send(f"{a}".encode())
-
     message = serversocket.recv(1024).decode()
     playsound.playsound('recv.mp3')
     print(f"Server: {message}")
+
+    a = input('you: ')
+    serversocket.send(f"{a}".encode())
